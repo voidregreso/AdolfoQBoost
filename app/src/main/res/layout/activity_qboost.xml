@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="368.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <CheckBox android:id="@+id/checkBoxBig" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Big Core" android:layout_weight="1.0" />
+                <CheckBox android:id="@+id/checkBoxLittle" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Little Core" android:layout_weight="1.0" />
+                <CheckBox android:id="@+id/checkBoxGPU" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GPU" android:layout_weight="1.0" />
+            </LinearLayout>
+            <TextView android:id="@+id/textView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Mode" />
+            <RadioGroup android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RadioButton android:id="@+id/radioButtonNormal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:text="Default" android:layout_weight="1.0" />
+                <RadioButton android:id="@+id/radioButtonEff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Efficient" android:layout_weight="1.0" />
+                <RadioButton android:id="@+id/radioButtonPowerSave" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Save" android:layout_weight="1.0" />
+                <RadioButton android:id="@+id/radioButtonSuperSave" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="SuperSave" android:layout_weight="1.0" />
+                <RadioButton android:id="@+id/radioButtonPerf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="MaxPower" android:layout_weight="1.0" />
+                <RadioButton android:id="@+id/radioButtonWindow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="User-defined" android:layout_weight="1.0" />
+            </RadioGroup>
+            <Space android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <TextView android:id="@+id/textViewMin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Min Perf %" />
+            <Space android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <SeekBar android:id="@+id/seekBarMin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:progress="0" />
+            <Space android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <TextView android:id="@+id/textViewMax" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Max Perf %" />
+            <Space android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <SeekBar android:id="@+id/seekBarMax" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <Space android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <Button android:id="@+id/buttonStart" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Start" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
